@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { icons } from '../images/icons';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
@@ -10,8 +10,6 @@ const screenHeight = Dimensions.get('screen').height;
 
   const Signup = () => {
     const navigation = useNavigation();
-    const[authenticated,setAuthenticated] = useState(false);
-    const[context,setContext] = useState(null);
     const[firstName,setFirstName] = useState('');
     const[lastname,setLastname] = useState('');
     const[emailid,setEmailid] = useState('');

@@ -71,19 +71,7 @@ const HomeScreen = () => {
           </View>
         </View>
         <ScrollView>
-          <View style={{ height: 240, width: windowWidth }}>
-            <FlatList horizontal  pagingEnabled={true}
-              data={temparr}  renderItem={({ item }) => (
-                <TouchableOpacity style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center',
-                  width: windowWidth, height: '100%', }}>
-                  <Image source={item.img} resizeMode='cover' style={{width: windowWidth, height: '100%',}} />
-                </TouchableOpacity>
-              )}
-              keyExtractor={(item, index) => index.toString()}
-              decelerationRate={'normal'}
-              scrollEventThrottle={16}   />
-
-          </View>
+         
           <Text style={{ width: '100%', textAlign: 'left', fontSize: 15, fontWeight: 'bold', color: 'black', padding: 10, }}>{'Fast&Up Blogs'}</Text>
           <View style={{ height: 240, width: windowWidth }}>
             <FlatList horizontal pagingEnabled={true}

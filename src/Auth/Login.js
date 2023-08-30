@@ -10,8 +10,6 @@ const screenHeight = Dimensions.get('screen').height;
 
  const Login = () => {
   const navigation = useNavigation();
-  const[authenticated, setAuthenticated] = useState(false);
-  const[constext, setContext] = useState(null);
   const[username,setUsername] = useState('');
   const[password, setPassword] = useState('');
   const[openLoginview, setOpenLoginview] = useState(false);

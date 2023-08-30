@@ -9,9 +9,7 @@ const screenWidth = Dimensions.get('screen').width;
 const screenHeight = Dimensions.get('screen').height;
 
 const Cart = () => {
-  const[authenticated,setAuthenticated] = useState(false);
-  const[context,setContext] = useState(null);
-
+ 
     return (
 
       <SafeAreaView style={styles.container}>

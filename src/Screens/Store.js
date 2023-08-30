@@ -5,12 +5,9 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { icons } from '../images/icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const screenWidth = Dimensions.get('screen').width;
-const screenHeight = Dimensions.get('screen').height;
 
 const Store = () => {
-    const[authenticated,setAuthenticated] = useState(false);
-    const[context,setContext] = useState(null);
+   
 
         return (
             <SafeAreaView style={styles.container}>
